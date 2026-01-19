@@ -348,13 +348,14 @@
         <div class="api-info">
             <h2>Holiday Calendar API</h2>
             <p style="color:var(--text-muted); margin-bottom:20px;">
-                Retrieve accurate Public, Bank, and Mercantile holidays for Sri Lanka. Updated annually in accordance with the Ministry of Public Administration.
+                Retrieve accurate Public, Bank, and Mercantile holidays for Sri Lanka. Updated annually in accordance with the Ministry of Public Administration.<br>
+                Request example: <code style="color:var(--accent); background:var(--bg-card); padding:4px 8px; border-radius:4px;">GET https://aztra-software.github.io/holidays/2026/</code>
             </p>
             <div class="endpoint">
-                <span class="method">GET</span> /v1/holidays/2026
+                <span class="method">GET</span> https://aztra-software.github.io/holidays/2026/
             </div>
             <div class="endpoint">
-                <span class="method">GET</span> /v1/holidays/2027
+                <span class="method">GET</span> https://aztra-software.github.io/holidays/2027/
             </div>
         </div>
         
@@ -364,6 +365,7 @@
                 <div class="dot yellow"></div>
                 <div class="dot green"></div>
             </div>
+            <div style="color:var(--text-muted); margin-bottom:8px; font-size:0.9rem;">Request: <code style="background:#0b1220; padding:2px 6px; border-radius:6px; color:var(--accent);">GET https://aztra-software.github.io/holidays/2026/</code></div>
 <pre>
 {
   <span class="key">"year"</span>: <span class="number">2026</span>,
