@@ -1,7 +1,4 @@
-{
-  "year": 2026,
-  "country": "Sri Lanka",
-  "holidays": [
+[
     {
       "date": "2026-01-03",
       "day": "Saturday",
@@ -152,5 +149,4 @@
       "name": "Christmas Day",
       "type": ["Public", "Bank", "Mercantile"]
     }
-  ]
-}
+]

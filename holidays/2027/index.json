@@ -1,0 +1,152 @@
+[
+    {
+        "date": "2027-01-15",
+        "day": "Friday",
+        "name": "Tamil Thai Pongal Day",
+        "type": ["Public", "Bank", "Mercantile"]
+    },
+    {
+        "date": "2027-01-22",
+        "day": "Friday",
+        "name": "Duruthu Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-02-04",
+        "day": "Thursday",
+        "name": "Independence Day",
+        "type": ["Public", "Bank", "Mercantile"]
+    },
+    {
+        "date": "2027-02-21",
+        "day": "Sunday",
+        "name": "Navam Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-03-06",
+        "day": "Saturday",
+        "name": "Mahasivarathri Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-03-10",
+        "day": "Wednesday",
+        "name": "Id-Ul-Fitr (Ramazan Festival Day)",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-03-22",
+        "day": "Monday",
+        "name": "Medin Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-03-26",
+        "day": "Friday",
+        "name": "Good Friday",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-04-13",
+        "day": "Tuesday",
+        "name": "Day prior to Sinhala & Tamil New Year Day",
+        "type": ["Public", "Bank", "Mercantile"]
+    },
+    {
+        "date": "2027-04-14",
+        "day": "Wednesday",
+        "name": "Sinhala & Tamil New Year Day",
+        "type": ["Public", "Bank", "Mercantile"]
+    },
+    {
+        "date": "2027-04-20",
+        "day": "Tuesday",
+        "name": "Bak Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-05-01",
+        "day": "Saturday",
+        "name": "May Day (International Workers' Day)",
+        "type": ["Public", "Bank", "Mercantile"]
+    },
+    {
+        "date": "2027-05-17",
+        "day": "Monday",
+        "name": "Id-Ul-Alha (Hadji Festival Day)",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-05-20",
+        "day": "Thursday",
+        "name": "Vesak Full Moon Poya Day",
+        "type": ["Public", "Bank", "Mercantile"]
+    },
+    {
+        "date": "2027-05-21",
+        "day": "Friday",
+        "name": "Day following Vesak Full Moon Poya Day",
+        "type": ["Public", "Bank", "Mercantile"]
+    },
+    {
+        "date": "2027-06-18",
+        "day": "Friday",
+        "name": "Poson Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-07-18",
+        "day": "Sunday",
+        "name": "Esala Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-08-15",
+        "day": "Sunday",
+        "name": "Milad-Un-Nabi (Holy Prophet's Birthday)",
+        "type": ["Public", "Bank", "Mercantile"]
+    },
+    {
+        "date": "2027-08-17",
+        "day": "Tuesday",
+        "name": "Nikini Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-09-15",
+        "day": "Wednesday",
+        "name": "Binara Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-10-15",
+        "day": "Friday",
+        "name": "Vap Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-10-29",
+        "day": "Friday",
+        "name": "Deepavali Festival Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-11-14",
+        "day": "Sunday",
+        "name": "Il Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-12-13",
+        "day": "Monday",
+        "name": "Unduvap Full Moon Poya Day",
+        "type": ["Public", "Bank"]
+    },
+    {
+        "date": "2027-12-25",
+        "day": "Saturday",
+        "name": "Christmas Day",
+        "type": ["Public", "Bank", "Mercantile"]
+    }
+]
