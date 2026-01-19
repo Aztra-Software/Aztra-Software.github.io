@@ -1,3 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aztra Public APIs | Developer Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #6366f1; /* Indigo */
+            --secondary: #ec4899; /* Pink */
+            --accent: #14b8a6; /* Teal */
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- Header --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn-github {
+            background-color: #24292e;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-left: 20px;
+            transition: transform 0.2s;
+        }
+
+        .btn-github:hover {
+            transform: translateY(-2px);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 100px 5%;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(15,23,42,0) 70%);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        /* --- API Showcase --- */
+        .api-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 100px;
+            padding: 0 5%;
+            align-items: center;
+        }
+
+        .api-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .api-info h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .endpoint {
+            display: inline-flex;
+            align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent);
+        }
+
+        .method {
+            background: rgba(20, 184, 166, 0.1);
+            color: var(--accent);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+
+        .code-block {
+            flex: 1;
+            min-width: 300px;
+            background: #0d1117;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .code-header {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .dot.red { background: #ff5f56; }
+        .dot.yellow { background: #ffbd2e; }
+        .dot.green { background: #27c93f; }
+
+        pre {
+            color: #c9d1d9;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .key { color: #7ee787; }
+        .string { color: #a5d6ff; }
+        .number { color: #79c0ff; }
+
+        /* --- Grid Section --- */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto 100px;
+            padding: 0 5%;
+        }
+
+        .card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: #020617;
+            border-top: 1px solid var(--border);
+            padding: 60px 5% 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col a, .footer-col span {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            background: var(--bg-card);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #1e293b;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .api-container { flex-direction: column; }
+            .header { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-cube"></i> Aztra<span>APIs</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#docs">Documentation</a>
+            <a href="#status">Status</a>
+            <a href="#community">Community</a>
+            <a href="https://github.com/Aztra-Software" target="_blank" class="btn-github">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Essential Data for <br> Sri Lankan Developers.</h1>
+        <p>Reliable, open-source, and developer-friendly public APIs built by Aztra (Private) Limited. Integrate Sri Lankan holiday data, banking calendars, and more with ease.</p>
+    </section>
+
+    <section class="api-container">
+        <div class="api-info">
+            <h2>Holiday Calendar API</h2>
+            <p style="color:var(--text-muted); margin-bottom:20px;">
+                Retrieve accurate Public, Bank, and Mercantile holidays for Sri Lanka. Updated annually in accordance with the Ministry of Public Administration.
+            </p>
+            <div class="endpoint">
+                <span class="method">GET</span> /v1/holidays/2026
+            </div>
+            <div class="endpoint">
+                <span class="method">GET</span> /v1/holidays/2027
+            </div>
+        </div>
+        
+        <div class="code-block">
+            <div class="code-header">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+<pre>
 {
-    "message": "Hello, World!"
+  <span class="key">"year"</span>: <span class="number">2026</span>,
+  <span class="key">"country"</span>: <span class="string">"Sri Lanka"</span>,
+  <span class="key">"holidays"</span>: [
+    {
+      <span class="key">"date"</span>: <span class="string">"2026-01-15"</span>,
+      <span class="key">"name"</span>: <span class="string">"Tamil Thai Pongal Day"</span>,
+      <span class="key">"type"</span>: [<span class="string">"Public"</span>, <span class="string">"Bank"</span>, <span class="string">"Mercantile"</span>]
+    },
+    {
+      <span class="key">"date"</span>: <span class="string">"2026-02-04"</span>,
+      <span class="key">"name"</span>: <span class="string">"Independence Day"</span>,
+      <span class="key">"type"</span>: [<span class="string">"Public"</span>, <span class="string">"Bank"</span>, <span class="string">"Mercantile"</span>]
+    }
+    <span style="color:#64748b">// ... more items</span>
+  ]
 }
+</pre>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>High Performance</h3>
+            <p>Optimized for speed with low latency response times across the island.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-code-branch"></i>
+            <h3>Open Source</h3>
+            <p>Contribute to our data sets on GitHub. Community driven accuracy.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Reliable</h3>
+            <p>99.9% uptime. Maintained by the dedicated engineering team at Aztra.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Aztra (Private) Limited</h4>
+                <ul>
+                    <li><span style="align-items: flex-start;"><i class="fa-solid fa-location-dot" style="margin-top:5px;"></i> 1418C, Samanpaya, Matale Road,<br>Alawathugoda, 20140</span></li>
+                    <li><a href="tel:0662223968"><i class="fa-solid fa-phone"></i> 066 222 3968</a></li>
+                    <li><a href="https://wa.me/94771187076"><i class="fa-brands fa-whatsapp"></i> 077 118 7076</a></li>
+                    <li><a href="mailto:contact@aztra.lk"><i class="fa-solid fa-envelope"></i> contact@aztra.lk</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">API Documentation</a></li>
+                    <li><a href="#">System Status</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/aztrasoftware" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/aztrasoftware" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@aztra_lk" class="social-icon" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@Aztra-Software" class="social-icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/aztralk" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 Aztra (Private) Limited. All rights reserved. <br>
+            <a href="http://www.aztra.lk" style="color:var(--primary); text-decoration:none;">www.aztra.lk</a>
+        </div>
+    </footer>
+
+</body>
+</html>
