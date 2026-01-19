@@ -1,152 +1,342 @@
-[
+{
+  "holidays": [
     {
-      "date": "2026-01-03",
-      "day": "Saturday",
+      "id": "1",
       "name": "Duruthu Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "දුරුතු පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "துருது பௌர்ணமி",
+      "date": "2026-01-03",
+      "description": "Commemorates the Buddha's first visit to Sri Lanka",
+      "description_si": "බුදුරජාණන් වහන්සේගේ ශ්‍රී ලංකාවට පළමු පැමිණීම සිහිපත් කරන දුරුතු පුර්ණිමා දිනය",
+      "description_ta": "புத்தரின் இலங்கைக்கான முதல் வருகையை நினைவுகூரும் துருது பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-01-15",
-      "day": "Thursday",
+      "id": "2",
       "name": "Tamil Thai Pongal Day",
-      "type": ["Public", "Bank", "Mercantile"]
+      "name_si": "දෙමළ තායි පොංගල් දිනය",
+      "name_ta": "தைப்பொங்கல்",
+      "date": "2026-01-15",
+      "description": "Hindu harvest festival dedicated to the Sun God",
+      "description_si": "දෙමළ ජනතාව සමරන අස්වනු උත්සවය",
+      "description_ta": "தமிழ் சமூகத்தால் கொண்டாடப்படும் அறுவடை திருநாள்",
+      "type": "cultural",
+      "is_recurring": true,
+      "color": "#FFB300"
     },
     {
-      "date": "2026-02-01",
-      "day": "Sunday",
+      "id": "3",
       "name": "Navam Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "නවාම් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "நவாம் பௌர்ணமி",
+      "date": "2026-02-01",
+      "description": "Celebrates the appointment of the Buddha's chief disciples",
+      "description_si": "සංඝය සම්බන්ධ වැදගත් සිදුවීම් සිහිපත් කරන නවාම් පෝය දිනය",
+      "description_ta": "பிக்குகளின் முக்கிய நிகழ்வுகளை நினைவுகூரும் நவாம் பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-02-04",
-      "day": "Wednesday",
+      "id": "4",
       "name": "Independence Day",
-      "type": ["Public", "Bank", "Mercantile"]
+      "name_si": "නිදහස් දිනය",
+      "name_ta": "சுதந்திர தினம்",
+      "date": "2026-02-04",
+      "description": "Commemorating Sri Lanka's independence from British rule in 1948",
+      "description_si": "1948 දී බ්‍රිතාන්‍ය පාලනයෙන් ශ්‍රී ලංකාවේ නිදහස ලැබීම සිහිපත් කරනු",
+      "description_ta": "1948 இல் பிரிட்டிஷ் ஆட்சியிலிருந்து இலங்கையின் சுதந்திரத்தை நினைவுகூரும்",
+      "type": "public",
+      "is_recurring": true,
+      "color": "#FF9933"
     },
     {
+      "id": "5",
+      "name": "Maha Sivarathri Day",
+      "name_si": "මහා ශිවරාත්‍රි දිනය",
+      "name_ta": "மகா சிவராத்திரி",
       "date": "2026-02-15",
-      "day": "Sunday",
-      "name": "Mahasivarathri Day",
-      "type": ["Public", "Bank"]
+      "description": "Hindu festival dedicated to the worship of Lord Shiva",
+      "description_si": "ශිව දෙවියන්ට කැප කළ හින්දු උත්සවය",
+      "description_ta": "சிவ பெருமானுக்கு அர்ப்பணிக்கப்பட்ட இந்து திருநாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-03-02",
-      "day": "Monday",
+      "id": "6",
       "name": "Medin Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "මැදින් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "மெதின் பௌர்ணமி",
+      "date": "2026-03-02",
+      "description": "Commemorates Buddha's visit to his home to see his father",
+      "description_si": "බුදුරජාණන් වහන්සේගේ ශ්‍රී ලංකාවට පළමු පැමිණීම සිහිපත් කරන බෞද්ධ පුර්ණිමා දිනය",
+      "description_ta": "புத்தரின் இலங்கைக்கான முதல் வருகையை நினைவுகூரும் பௌத்த பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
+      "id": "7",
+      "name": "Eid al-Fitr (Ramazan Festival Day)",
+      "name_si": "ඊද් අල්-ෆිත්ර් (රාමසාන් උත්සවය)",
+      "name_ta": "ஈத் அல்-ஃபித்ர்",
       "date": "2026-03-21",
-      "day": "Saturday",
-      "name": "Id-Ul-Fitr (Ramazan Festival Day)",
-      "type": ["Public", "Bank"]
+      "description": "Islamic festival marking the end of the fasting month of Ramadan",
+      "description_si": "රමදාන් මාසයේ අවසානය සනිටුහන් කරන ඉස්ලාම් උත්සවය",
+      "description_ta": "ரமளானின் முடிவைக் குறிக்கும் இஸ்லாமிய திருநாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-04-01",
-      "day": "Wednesday",
+      "id": "8",
       "name": "Bak Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "බක් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "பக் பௌர்ணமி",
+      "date": "2026-04-01",
+      "description": "Commemorates the Buddha's second visit to Sri Lanka",
+      "description_si": "බෞද්ධ පුර්ණිමා දිනය",
+      "description_ta": "பௌத்த பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-04-03",
-      "day": "Friday",
+      "id": "9",
       "name": "Good Friday",
-      "type": ["Public", "Bank"]
+      "name_si": "මහා සිකුරාදා",
+      "name_ta": "நல்ல வெள்ளிக்கிழமை",
+      "date": "2026-04-03",
+      "description": "Christian commemoration of the crucifixion of Jesus Christ",
+      "description_si": "ජේසුස් ක්‍රිස්තුස් වහන්සේගේ කුරුසියේ ඇණ ගැසීම සිහිපත් කරන ක්‍රිස්තියානි දිනය",
+      "description_ta": "இயேசு கிறிஸ்துவின் சிலுவையில் அறையப்பட்டதை நினைவுகூரும் கிறிஸ்தவ நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
+      "id": "10",
+      "name": "Day Prior to Sinhala and Tamil New Year",
+      "name_si": "සිංහල හා දෙමළ අලුත් අවුරුදු පූර්ව දිනය",
+      "name_ta": "சிங்கள மற்றும் தமிழ் புத்தாண்டு முன்னோட்டம்",
       "date": "2026-04-13",
-      "day": "Monday",
-      "name": "Day prior to Sinhala & Tamil New Year Day",
-      "type": ["Public", "Bank", "Mercantile"]
+      "description": "The day preceding the Traditional New Year",
+      "description_si": "සිංහල හා දෙමළ අලුත් අවුරුදු උත්සව පෙර රාත්‍රිය",
+      "description_ta": "சிங்கள மற்றும் தமிழ் புத்தாண்டு கொண்டாட்டங்களின் முன்னோட்ட நாள்",
+      "type": "cultural",
+      "is_recurring": true,
+      "color": "#FFB300"
     },
     {
+      "id": "11",
+      "name": "Sinhala and Tamil New Year Day",
+      "name_si": "සිංහල හා දෙමළ අලුත් අවුරුදු දිනය",
+      "name_ta": "சிங்கள மற்றும் தமிழ் புத்தாண்டு",
       "date": "2026-04-14",
-      "day": "Tuesday",
-      "name": "Sinhala & Tamil New Year Day",
-      "type": ["Public", "Bank", "Mercantile"]
+      "description": "Traditional New Year celebrated by Sinhalese and Tamil communities",
+      "description_si": "සිංහල හා දෙමළ ප්‍රජාවන් විසින් සමරනු ලබන සාම්ප්‍රදායික අලුත් අවුරුද්ද",
+      "description_ta": "சிங்கள மற்றும் தமிழ் சமூகங்களால் கொண்டாடப்படும் பாரம்பரிய புத்தாண்டு",
+      "type": "cultural",
+      "is_recurring": true,
+      "color": "#FFB300"
     },
     {
+      "id": "12",
+      "name": "Vesak Full Moon Poya Day",
+      "name_si": "වෙසක් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "வேசாக் பௌர்ணமி",
       "date": "2026-05-01",
-      "day": "Friday",
-      "name": "May Day (International Workers' Day) & Vesak Full Moon Poya Day",
-      "type": ["Public", "Bank", "Mercantile"]
+      "description": "Commemorates the birth, enlightenment, and passing of the Buddha",
+      "description_si": "බුදුරජාණන් වහන්සේගේ ජන්මය, බුද්ධත්වය සහ පරිනිර්වාණය සිහිපත් කරයි",
+      "description_ta": "புத்தரின் பிறப்பு, ஞானம் மற்றும் மரணத்தை கொண்டாடுகிறது",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
+      "id": "13",
+      "name": "May Day",
+      "name_si": "කම්කරු දිනය",
+      "name_ta": "தொழிலாளர் தினம்",
+      "date": "2026-05-01",
+      "description": "International Workers' Day",
+      "description_si": "ජාත්‍යන්තර කම්කරු දිනය",
+      "description_ta": "சர்வதேச தொழிலாளர் தினம்",
+      "type": "public",
+      "is_recurring": true,
+      "color": "#1976D2"
+    },
+    {
+      "id": "14",
+      "name": "Day Following Vesak Full Moon Poya Day",
+      "name_si": "වෙසක් පුර පසළොස්වක පෝය පසු දිනය",
+      "name_ta": "வேசாக் பௌர்ணமிக்கு அடுத்த நாள்",
       "date": "2026-05-02",
-      "day": "Saturday",
-      "name": "Day following Vesak Full Moon Poya Day",
-      "type": ["Public", "Bank", "Mercantile"]
+      "description": "Second day of the Vesak festival",
+      "description_si": "වෙසක් සමරන අතිරේක දිනය",
+      "description_ta": "வேசாக் கொண்டாட்டங்களின் கூடுதல் நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
+      "id": "15",
+      "name": "Eid al-Adha (Hadji Festival Day)",
+      "name_si": "ඊද් අල්-අද්හා (හජ් උත්සවය)",
+      "name_ta": "ஈத் அல்-அத்ஹா",
       "date": "2026-05-28",
-      "day": "Thursday",
-      "name": "Id-Ul-Alha (Hadji Festival Day)",
-      "type": ["Public", "Bank"]
+      "description": "Islamic festival of sacrifice",
+      "description_si": "ඉස්ලාම් පූජා උත්සවය",
+      "description_ta": "இஸ்லாமிய தியாக திருநாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-05-30",
-      "day": "Saturday",
+      "id": "16",
       "name": "Adhi Poson Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "අධි පොසොන් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "அதி போசோன் பௌர்ணமி",
+      "date": "2026-05-30",
+      "description": "An additional Poya day occurring in years with an intercalary month",
+      "description_si": "අතිරේක පොසොන් පුර පසළොස්වක පෝය දිනය",
+      "description_ta": "கூடுதல் போசோன் பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-06-29",
-      "day": "Monday",
+      "id": "17",
       "name": "Poson Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "පොසොන් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "போசோன் பௌர்ணமி",
+      "date": "2026-06-29",
+      "description": "Commemorates the introduction of Buddhism to Sri Lanka",
+      "description_si": "ශ්‍රී ලංකාවට බුද්ධ ධර්මය හඳුන්වා දීම සිහිපත් කරයි",
+      "description_ta": "இலங்கைக்கு பௌத்தத்தின் அறிமுகத்தை நினைவுகூரும்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-07-29",
-      "day": "Wednesday",
+      "id": "18",
       "name": "Esala Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "ඇසල පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "ஏசல பௌர்ணமி",
+      "date": "2026-07-29",
+      "description": "Commemorates the Buddha's first sermon",
+      "description_si": "බුදුරජාණන් වහන්සේගේ පළමු දේශනය සිහිපත් කරන ඇසල පෝය",
+      "description_ta": "புத்தரின் முதல் போதனையை நினைவுகூரும் ஏசல பௌர்ணமி",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
+      "id": "19",
+      "name": "Milad un-Nabi (Prophet's Birthday)",
+      "name_si": "මිලාද් උන්-නබි (නබි නායකතුමාගේ උපන් දිනය)",
+      "name_ta": "மிலாத் உன்-நபி",
       "date": "2026-08-26",
-      "day": "Wednesday",
-      "name": "Milad-Un-Nabi (Holy Prophet's Birthday)",
-      "type": ["Public", "Bank", "Mercantile"]
+      "description": "Celebration of the birth of the Prophet Muhammad",
+      "description_si": "මුහම්මද් නබි වහන්සේගේ උපන්දිනය සමරන ඉස්ලාම් උත්සවය",
+      "description_ta": "நபிகள் நாயகம் முகம்மது (ஸல்) அவர்களின் பிறந்தநாள் கொண்டாட்டம்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-08-27",
-      "day": "Thursday",
+      "id": "20",
       "name": "Nikini Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "නිකිණි පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "நிகினி பௌர்ணமி",
+      "date": "2026-08-27",
+      "description": "Commemorates the first Dhamma Sangayana (Buddhist Council)",
+      "description_si": "සංඝ සභා සම්බන්ධ සිදුවීම් සමරන නිකිණි පෝය",
+      "description_ta": "பிக்குகள் சபையின் நிகழ்வுகளை நினைவுகூரும் நிகினி பௌர்ணமி",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-09-26",
-      "day": "Saturday",
+      "id": "21",
       "name": "Binara Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "බිනර පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "பிநர பௌர்ணமி",
+      "date": "2026-09-26",
+      "description": "Commemorates the establishment of the Bikkhuni Sasana (Order of Nuns)",
+      "description_si": "බෞද්ධ පුර්ණිමා දිනය",
+      "description_ta": "பௌத்த பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-10-25",
-      "day": "Sunday",
+      "id": "22",
       "name": "Vap Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "වප් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "வப் பௌர்ணமி",
+      "date": "2026-10-25",
+      "description": "Marks the end of the rainy retreat (Vassa) for monks",
+      "description_si": "බෞද්ධ පුර්ණිමා දිනය",
+      "description_ta": "பௌத்த பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-11-08",
-      "day": "Sunday",
+      "id": "23",
       "name": "Deepavali Festival Day",
-      "type": ["Public", "Bank"]
+      "name_si": "දීපාවලි උත්සව දිනය",
+      "name_ta": "தீபாவளி",
+      "date": "2026-11-08",
+      "description": "Hindu festival of lights",
+      "description_si": "හින්දු ආලෝක උත්සවය",
+      "description_ta": "இந்து ஒளித் திருநாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-11-24",
-      "day": "Tuesday",
+      "id": "24",
       "name": "Il Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "ඉල් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "இல் பௌர்ணமி",
+      "date": "2026-11-24",
+      "description": "Commemorates the Buddha's announcement of his future passing",
+      "description_si": "බෞද්ධ පුර්ණිමා දිනය",
+      "description_ta": "பௌத்த பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-12-23",
-      "day": "Wednesday",
+      "id": "25",
       "name": "Unduvap Full Moon Poya Day",
-      "type": ["Public", "Bank"]
+      "name_si": "උඳුවප් පුර පසළොස්වක පෝය දිනය",
+      "name_ta": "உந்துவப் பௌர்ணமி",
+      "date": "2026-12-23",
+      "description": "Commemorates the arrival of the Sangamitta Theri with the Jaya Sri Maha Bodhi sapling",
+      "description_si": "බෞද්ධ පුර්ණිමා දිනය",
+      "description_ta": "பௌத்த பௌர்ணமி நாள்",
+      "type": "religious",
+      "is_recurring": false,
+      "color": "#006A4E"
     },
     {
-      "date": "2026-12-25",
-      "day": "Friday",
+      "id": "26",
       "name": "Christmas Day",
-      "type": ["Public", "Bank", "Mercantile"]
+      "name_si": "නත්තල් දිනය",
+      "name_ta": "கிறிஸ்மஸ் தினம்",
+      "date": "2026-12-25",
+      "description": "Christian celebration of the birth of Jesus Christ",
+      "description_si": "ජේසුස් ක්‍රිස්තුස් වහන්සේගේ ජන්මය සමරන ක්‍රිස්තියානි උත්සවය",
+      "description_ta": "இயேசு கிறிஸ்துவின் பிறப்பை கொண்டாடும் கிறிஸ்தவ விழா",
+      "type": "religious",
+      "is_recurring": true,
+      "color": "#006A4E"
     }
-]
+  ]
+}
