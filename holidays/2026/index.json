@@ -24,7 +24,7 @@
       "description_ta": "தமிழ் சமூகத்தால் கொண்டாடப்படும் அறுவடை திருநாள்",
       "type": "cultural",
       "is_recurring": true,
-      "color": "#FF365F"
+      "color": "##00bf80"
     },
     {
       "id": "3",
@@ -128,7 +128,7 @@
       "description_ta": "சிங்கள மற்றும் தமிழ் புத்தாண்டு கொண்டாட்டங்களின் முன்னோட்ட நாள்",
       "type": "cultural",
       "is_recurring": true,
-      "color": "#FFB300"
+      "color": "##00bf80"
     },
     {
       "id": "11",
@@ -141,7 +141,7 @@
       "description_ta": "சிங்கள மற்றும் தமிழ் சமூகங்களால் கொண்டாடப்படும் பாரம்பரிய புத்தாண்டு",
       "type": "cultural",
       "is_recurring": true,
-      "color": "#FFB300"
+      "color": "##00bf80"
     },
     {
       "id": "12",
