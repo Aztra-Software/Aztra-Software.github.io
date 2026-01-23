@@ -24,7 +24,7 @@
       "description_ta": "தமிழ் சமூகத்தால் கொண்டாடப்படும் அறுவடை திருநாள்",
       "type": "cultural",
       "is_recurring": true,
-      "color": "#00BF80"
+      "color": "#FFB300"
     },
     {
       "id": "3",
@@ -51,6 +51,19 @@
       "type": "public",
       "is_recurring": true,
       "color": "#FF9933"
+    },
+    {
+      "id": "27",
+      "name": "National Day",
+      "name_si": "ජාතික දිනය",
+      "name_ta": "தேசிய தினம்",
+      "date": "2026-02-04",
+      "description": "National Day celebrations with flag hoisting ceremonies",
+      "description_si": "ජාතික ධජය එසවීමේ උත්සව සහිත ජාතික දිනය",
+      "description_ta": "தேசிய கொடி ஏற்றுதலுடன் நடைபெறும் தேசிய தினம்",
+      "type": "specialDay",
+      "is_recurring": true,
+      "color": "#E91E63"
     },
     {
       "id": "5",
@@ -118,6 +131,19 @@
       "color": "#006A4E"
     },
     {
+      "id": "28",
+      "name": "Avurudu Customs Day",
+      "name_si": "අවුරුදු සම්ප්‍රදායන්ගේ දිනය",
+      "name_ta": "புத்தாண்டு பாரம்பரிய நாள்",
+      "date": "2026-04-13",
+      "description": "Day dedicated to traditional New Year customs and rituals",
+      "description_si": "අවුරුදු සම්ප්‍රදායන් සහ චාරිත්‍ර වලට කැප කළ දිනය",
+      "description_ta": "பாரம்பரிய புத்தாண்டு பழக்கவழக்கங்கள் மற்றும் சடங்குகளுக்கான நாள்",
+      "type": "specialDay",
+      "is_recurring": true,
+      "color": "#E91E63"
+    },
+    {
       "id": "10",
       "name": "Day Prior to Sinhala and Tamil New Year",
       "name_si": "සිංහල හා දෙමළ අලුත් අවුරුදු පූර්ව දිනය",
@@ -128,7 +154,7 @@
       "description_ta": "சிங்கள மற்றும் தமிழ் புத்தாண்டு கொண்டாட்டங்களின் முன்னோட்ட நாள்",
       "type": "cultural",
       "is_recurring": true,
-      "color": "#00BF80"
+      "color": "#FFB300"
     },
     {
       "id": "11",
@@ -141,7 +167,7 @@
       "description_ta": "சிங்கள மற்றும் தமிழ் சமூகங்களால் கொண்டாடப்படும் பாரம்பரிய புத்தாண்டு",
       "type": "cultural",
       "is_recurring": true,
-      "color": "#00BF80"
+      "color": "#FFB300"
     },
     {
       "id": "12",
@@ -168,6 +194,19 @@
       "type": "public",
       "is_recurring": true,
       "color": "#1976D2"
+    },
+    {
+      "id": "29",
+      "name": "Workers' Rights Day",
+      "name_si": "කම්කරු අයිතිවාසිකම් දිනය",
+      "name_ta": "தொழிலாளர் உரிமைகள் தினம்",
+      "date": "2026-05-01",
+      "description": "Day to recognize and celebrate workers' rights and achievements",
+      "description_si": "කම්කරුවන්ගේ අයිතිවාසිකම් සහ ජයග්‍රහණ සමරන දිනය",
+      "description_ta": "தொழிலாளர் உரிமைகள் மற்றும் சாதனைகளை அங்கீகரிக்கும் நாள்",
+      "type": "specialDay",
+      "is_recurring": true,
+      "color": "#E91E63"
     },
     {
       "id": "14",
@@ -220,6 +259,19 @@
       "type": "religious",
       "is_recurring": false,
       "color": "#006A4E"
+    },
+    {
+      "id": "30",
+      "name": "Buddhist Heritage Day",
+      "name_si": "බෞද්ධ උරුමය දිනය",
+      "name_ta": "பௌத்த பாரம்பரிய தினம்",
+      "date": "2026-06-29",
+      "description": "Celebration of Sri Lanka's rich Buddhist heritage and culture",
+      "description_si": "ශ්‍රී ලංකාවේ සමෘද්ධිමත් බෞද්ධ උරුමය හා සංස්කෘතිය සමරන දිනය",
+      "description_ta": "இலங்கையின் பண்பட்ட பௌத்த பாரம்பரியம் மற்றும் கலாச்சாரத்தை கொண்டாடும் நாள்",
+      "type": "specialDay",
+      "is_recurring": true,
+      "color": "#E91E63"
     },
     {
       "id": "18",
@@ -300,6 +352,19 @@
       "color": "#006A4E"
     },
     {
+      "id": "31",
+      "name": "Festival of Lights Celebration",
+      "name_si": "ආලෝක උත්සව සමරුව",
+      "name_ta": "ஒளித் திருநாள் கொண்டாட்டம்",
+      "date": "2026-11-08",
+      "description": "Special celebrations for the Festival of Lights",
+      "description_si": "දීපාවලි ආලෝක උත්සවය සඳහා විශේෂ සමරුව",
+      "description_ta": "தீபாவளி ஒளித் திருநாள் கொண்டாட்டங்கள்",
+      "type": "specialDay",
+      "is_recurring": true,
+      "color": "#E91E63"
+    },
+    {
       "id": "24",
       "name": "Il Full Moon Poya Day",
       "name_si": "ඉල් පුර පසළොස්වක පෝය දිනය",
@@ -337,6 +402,19 @@
       "type": "religious",
       "is_recurring": true,
       "color": "#006A4E"
+    },
+    {
+      "id": "32",
+      "name": "Christmas Eve Celebrations",
+      "name_si": "නත්තල් පූර්ව රාත්‍රියේ සමරුව",
+      "name_ta": "கிறிஸ்மஸ் முன்னிரவு கொண்டாட்டங்கள்",
+      "date": "2026-12-24",
+      "description": "Special celebrations on Christmas Eve",
+      "description_si": "නත්තල් පූර්ව රාත්‍රියේ විශේෂ සමරුව",
+      "description_ta": "கிறிஸ்மஸ் முன்னிரவு சிறப்பு கொண்டாட்டங்கள்",
+      "type": "specialDay",
+      "is_recurring": true,
+      "color": "#E91E63"
     }
   ]
 }
